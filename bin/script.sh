@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo "Qual o diretório?"
-
-read DIRECTORY
-
 echo "[=>                           ] 0%"
 echo $(find /home/$(whoami)/$DIRECTORY/ -type d -exec chmod 755 {} \;)
 echo "[====>                        ] 15%"
@@ -19,4 +15,3 @@ echo $(find /home/$(whoami)/$DIRECTORY/ -name 7za* -exec chmod 755 {} \;)
 echo "[========================>    ] 90%"
 echo $(find /home/$(whoami)/$DIRECTORY/ -name qpdf-linux-amd64* -exec chmod 755 {} \;)
 echo "[============================>] 100%"
-echo "Permissões corrigidas com sucesso!"
