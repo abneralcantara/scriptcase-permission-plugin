@@ -1,2 +1,2 @@
 # scriptcase-permission-plugin
-A Plugin to help clients correct a folder permission in their host.
+A plugin that helps clients to correct folder permissions in their host.
