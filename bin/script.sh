@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DIRECTORY= $(cat path_d.txt)
+
 echo "[=>                           ] 0%"
 echo $(find /home/$(whoami)/$DIRECTORY/ -type d -exec chmod 755 {} \;)
 echo "[====>                        ] 15%"
